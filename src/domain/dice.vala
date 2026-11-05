@@ -2,7 +2,7 @@ using GLib;
 
 namespace DiceGame.Domain {
 
-    public class Dice : GLib.Object {
+    internal class Dice : GLib.Object {
 
         // property
         public int pips {get; private set;}
@@ -12,6 +12,7 @@ namespace DiceGame.Domain {
             throw_dice();
         }// public Dice()
 
+        // methode
         public void throw_dice() {
             pips = Random.int_range(1, 7);
         }// public void throw_dice()
