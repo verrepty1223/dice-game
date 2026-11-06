@@ -5,22 +5,22 @@ namespace DiceGame {
     
     // functions
     public void test_core() {
-        var core = new GameCore();
-        core.do_roll();
-
+        GameCore core = new GameCore();
+        core.do_throw_1();
+        
         stdout.printf("Welcome to dice game!!!\n\n");
         stdout.printf("first throw is: %d\n", core.throw_1);
         stdout.printf("Will next throw be [LOWER, HIGHER]: ");
-        string? choice = stdin.read_line();
+        string? user_choice = stdin.read_line();
 
-        core.do_roll();
+        core.do_throw_2();
 
-        switch (choice.up()) {
+        switch (user_choice.strip().up()) {
             case "LOWER":
-                core.choice = core.Choice.LOWER;
+                core.choice = GameCore.Choice.LOWER;
                 break;
             case "HIGHER":
-                core.choice = core.Choice.HIGHER;
+                core.choice = GameCore.Choice.HIGHER;
                 break;
         }
         
@@ -33,7 +33,7 @@ namespace DiceGame {
             stdout.printf("Wrong, throw_1: %d and throw_2: %d with choice: %b\n", core.throw_1, core.throw_2, core.choice);
         }
         
-    }
+    }// public void test_core()
 
     // enterypoint
     void main() {

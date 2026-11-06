@@ -24,17 +24,15 @@ namespace DiceGame.Domain {
         }// public GameCore() 
 
         // methode
-        public void do_roll() {
+        public void do_throw_1() {
             dice.throw_dice();
-            
-            if (throw_1 == 0) {
-                throw_1 = dice.pips;
-            }
-            else if (throw_2 == 0) {
-                throw_2 = dice.pips;
-        }
+            throw_1 = dice.pips;
+        }// public void do_throw_1()
 
-        }// public void doRoll()
+        public void do_throw_2() {
+            dice.throw_dice();
+            throw_2 = dice.pips;
+        }// public void do_throw_2()
 
         public bool get_result() {
             bool result = false;
@@ -60,8 +58,7 @@ namespace DiceGame.Domain {
 
         public void next_round() {
             throw_1 = throw_2;
-            dice.throw_dice();
-            throw_2 = dice.pips;
+            throw_2 = 0;
         }// public void next_round()
 
     }// public class GameCore : GLib.Object 
