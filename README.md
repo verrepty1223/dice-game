@@ -13,7 +13,10 @@ The project follow a layered approch with the files doing the following:
 ## Todo
 - [x] Change te way the property choice get its valua from the user.
 - [x] Split do_roll() into two functions one for each roll.
-- [ ] Redo code of test_game_core() to make it more then a one use case.
+- [x] Redo code of test_game_core() to make it more then a one use case.
+- [ ] Add code to controller.vala
+- [ ] Add entrypoint and interface/ with interface/cli folders
+- [ ] Add coude for entrypoint and interface/cli
 
 ## build commands
 ```sh
