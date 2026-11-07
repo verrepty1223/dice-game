@@ -1,16 +1,15 @@
 using GLib;
-using DiceGame.Domain;
 
 namespace DiceGame.Domain {
 
+    // enum
+    public enum Choice {
+        HIGHER,
+        LOWER
+    }
+
     internal class GameCore : GLib.Object {
         
-        // enum
-        public enum Choice {
-            HIGHER,
-            LOWER
-        }
-
         // properties
         public int throw_1 {get; private set ; default = 0;}
         public int throw_2 {get; private set; default = 0;}
