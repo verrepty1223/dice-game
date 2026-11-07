@@ -1,5 +1,4 @@
 using GLib;
-using DiceGame.Domain;
 
 namespace DiceGame {
     
