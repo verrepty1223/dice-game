@@ -16,7 +16,7 @@ The project follow a layered approch with the files doing the following:
 - [x] Redo code of test_game_core() to make it more then a one use case.
 - [x] Add code to controller.vala
 - [ ] Add entrypoint and interface/ with interface/cli folders
-- [ ] Add coude for entrypoint and interface/cli
+- [ ] Add code for entrypoint and interface/cli
 
 ## build commands
 ```sh
