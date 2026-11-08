@@ -15,8 +15,8 @@ The project follow a layered approch with the files doing the following:
 - [x] Split do_roll() into two functions one for each roll.
 - [x] Redo code of test_game_core() to make it more then a one use case.
 - [x] Add code to controller.vala
-- [ ] Add entrypoint and interface/ with interface/cli folders
-- [ ] Add code for entrypoint and interface/cli
+- [x] Add entrypoint and interface/ with interface/cli folders
+- [x] Add code for entrypoint and interface/cli
 
 ## build commands
 ```sh
