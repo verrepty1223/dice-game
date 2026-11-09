@@ -11,12 +11,17 @@ The project follow a layered approch with the files doing the following:
 - controller.vala: server as the abstraction layer between the frontend (cli or gui) and the backend. 
 
 ## Todo
+### project
 - [x] Change te way the property choice get its valua from the user.
 - [x] Split do_roll() into two functions one for each roll.
 - [x] Redo code of test_game_core() to make it more then a one use case.
 - [x] Add code to controller.vala
-- [x] Add entrypoint and interface/ with interface/cli folders
+- [x] Add entrypoint and interface/ with interface/cli folders.
 - [x] Add code for entrypoint and interface/cli
+### addons
+- [ ] Add argument phraser for startup, information, etc
+- [ ] Add graphical interface to the program.
+
 
 ## build commands
 ```sh
