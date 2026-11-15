@@ -1,4 +1,9 @@
-project('dice-game', 'vala', version: '0.1.0')
+project(
+    'dice-game', 
+    'vala', 'c', 
+    version: '0.1.0', 
+    meson_version: '>= 1.3.2'
+    )
 
 sources = files(
     'src/entrypoint.vala',
@@ -8,6 +13,13 @@ sources = files(
     'src/ui/cli/cli-interface.vala'
     )
 
-deps = [dependency('glib-2.0'), dependency('gobject-2.0')]
+deps = [
+    dependency('glib-2.0'), 
+    dependency('gobject-2.0')
+    ]
 
-executable('dice-game', sources, dependencies: deps)
+executable(
+    'dice-game', 
+    sources, 
+    dependencies: deps
+    )
